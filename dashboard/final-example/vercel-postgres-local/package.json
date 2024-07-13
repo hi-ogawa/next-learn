@@ -2,7 +2,12 @@
 	"name": "vercel-postgres-local",
 	"private": true,
 	"type": "module",
-	"exports": "./index.js",
+	"exports": {
+		".": {
+			"types": "./index.d.ts",
+			"default": "./index.js"
+		}
+	},
 	"dependencies": {
 		"pg": "^8.12.0"
 	}
