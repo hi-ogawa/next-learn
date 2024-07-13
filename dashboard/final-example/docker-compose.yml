@@ -1,0 +1,16 @@
+# SETUP
+#   docker compose up -d
+#   make db/reset
+
+services:
+  postgres:
+    image: postgres:16.3-alpine
+    ports:
+      - 6432:5432
+    environment:
+      - POSTGRES_PASSWORD=password
+    volumes:
+      - postgres-volume:/var/lib/postgresql/data
+
+volumes:
+  postgres-volume:
