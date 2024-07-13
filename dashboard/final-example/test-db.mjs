@@ -49,6 +49,11 @@ async function main() {
 	//   await sql.connect();
 	//   // console.log(await sql`SELECT 1 + 1`);
 	// }
+
+	{
+		const { sql } = await import("./vercel-postgres-local/index.js");
+		console.log(await sql`SELECT 1 + 1`);
+	}
 }
 
 main();
