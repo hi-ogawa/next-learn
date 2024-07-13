@@ -1,11 +1,7 @@
 import next from "next/vite";
-import { defineConfig } from "vite";
+import { defineConfig, loadEnv } from "vite";
 
-// TODO: loadEnv
-process.env.POSTGRES_URL =
-	"postgres://postgres:password@localhost:5432/development";
-process.env.AUTH_SECRET =
-	"ccb21d3e6f890b4c8e0f8abcf0816aab99f19acb1756f932f89508f97648ea49";
+Object.assign(process.env, loadEnv("development", import.meta.dirname, ""));
 
 export default defineConfig({
 	plugins: [
