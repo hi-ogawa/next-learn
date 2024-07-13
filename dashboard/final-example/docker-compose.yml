@@ -2,11 +2,6 @@
 #   docker compose up -d
 #   make db/reset
 
-# References
-#   https://gal.hagever.com/posts/running-vercel-postgres-locally
-#   https://github.com/neondatabase/serverless/issues/18#issuecomment-1564183687
-#   https://github.com/neondatabase/serverless/blob/main/DEPLOY.md
-
 services:
   postgres:
     image: postgres:16.3-alpine
@@ -16,17 +11,6 @@ services:
       - POSTGRES_PASSWORD=password
     volumes:
       - postgres-volume:/var/lib/postgresql/data
-
-  wsproxy:
-    image: ghcr.io/neondatabase/wsproxy
-    environment:
-      APPEND_PORT: "postgres:5432"
-      ALLOW_ADDR_REGEX: ".*"
-      LOG_TRAFFIC: "true"
-    ports:
-      - "6432:80"
-    depends_on:
-      - postgres
 
 volumes:
   postgres-volume:

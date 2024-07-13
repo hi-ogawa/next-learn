@@ -27,12 +27,12 @@ class MyPool extends pg.Pool {
 	};
 }
 
-const pool = new MyPool();
+export const _pool = new MyPool();
 
-export const sql = pool.sql;
+export const sql = _pool.sql;
 
 // quick workaround for seed/route.ts
 //   const client = await db.connect();
 export const db = {
-	connect: () => pool,
+	connect: () => _pool,
 };
