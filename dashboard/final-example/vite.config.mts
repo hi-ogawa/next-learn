@@ -1,10 +1,11 @@
 import next from "next/vite";
 import { defineConfig } from "vite";
-import { createRequire } from "node:module";
 
-const require = createRequire(import.meta.url);
-
-const external = ["@vercel/postgres", "bcrypt", "next-auth"];
+// TODO: loadEnv
+process.env.POSTGRES_URL =
+	"postgres://postgres:password@localhost:5432/development";
+process.env.AUTH_SECRET =
+	"ccb21d3e6f890b4c8e0f8abcf0816aab99f19acb1756f932f89508f97648ea49";
 
 export default defineConfig({
 	plugins: [
@@ -13,13 +14,14 @@ export default defineConfig({
 				{
 					name: "config",
 					config: () => ({
-						resolve: {
-							alias: {
-								"next/server.js": require.resolve("next/server"),
-							},
-						},
 						ssr: {
-							external,
+							external: [
+								"@vercel/postgres",
+								"bcrypt",
+								// need to inline next-auth, but we can externalize @auth/core,
+								// which incldues cjs deps such as `cookie`
+								"@auth/core",
+							],
 						},
 					}),
 				},
@@ -27,6 +29,6 @@ export default defineConfig({
 		}),
 	],
 	optimizeDeps: {
-		exclude: external,
+		exclude: ["@vercel/postgres", "bcrypt", "next-auth"],
 	},
 });

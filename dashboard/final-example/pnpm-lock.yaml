@@ -4,6 +4,11 @@ settings:
   autoInstallPeers: true
   excludeLinksFromLockfile: false
 
+patchedDependencies:
+  '@hiogawa/react-server-next@0.0.9':
+    hash: oxl5zznrztknlxcswrp5prmf5m
+    path: patches/@hiogawa__react-server-next@0.0.9.patch
+
 dependencies:
   '@heroicons/react':
     specifier: ^2.1.4
@@ -28,7 +33,7 @@ dependencies:
     version: 2.1.1
   next:
     specifier: npm:@hiogawa/react-server-next@latest
-    version: /@hiogawa/react-server-next@0.0.9(@hiogawa/react-server@0.3.2)(react-dom@19.0.0-rc-df5f2736-20240712)(react@19.0.0-rc-df5f2736-20240712)(typescript@5.5.2)(vite@5.3.3)
+    version: /@hiogawa/react-server-next@0.0.9(patch_hash=oxl5zznrztknlxcswrp5prmf5m)(@hiogawa/react-server@0.3.2)(react-dom@19.0.0-rc-df5f2736-20240712)(react@19.0.0-rc-df5f2736-20240712)(typescript@5.5.2)(vite@5.3.3)
   next-auth:
     specifier: 5.0.0-beta.19
     version: 5.0.0-beta.19(@hiogawa/react-server-next@0.0.9)(react@19.0.0-rc-df5f2736-20240712)
@@ -766,7 +771,7 @@ packages:
       react: 19.0.0-rc-df5f2736-20240712
     dev: false
 
-  /@hiogawa/react-server-next@0.0.9(@hiogawa/react-server@0.3.2)(react-dom@19.0.0-rc-df5f2736-20240712)(react@19.0.0-rc-df5f2736-20240712)(typescript@5.5.2)(vite@5.3.3):
+  /@hiogawa/react-server-next@0.0.9(patch_hash=oxl5zznrztknlxcswrp5prmf5m)(@hiogawa/react-server@0.3.2)(react-dom@19.0.0-rc-df5f2736-20240712)(react@19.0.0-rc-df5f2736-20240712)(typescript@5.5.2)(vite@5.3.3):
     resolution: {integrity: sha512-9UvQ3Mm4KpgNHiYnS7AxOX/FqabYCWWbyXweQL4ntUsmL0IciFkd1xIcgEGSPxMFxrqsUgRStpW0gYmLQayw1Q==}
     hasBin: true
     peerDependencies:
@@ -787,6 +792,7 @@ packages:
       - supports-color
       - typescript
     dev: false
+    patched: true
 
   /@hiogawa/react-server@0.3.2(react-dom@19.0.0-rc-df5f2736-20240712)(react-server-dom-webpack@19.0.0-rc-df5f2736-20240712)(react@19.0.0-rc-df5f2736-20240712)(vite@5.3.3):
     resolution: {integrity: sha512-NZ+2tm4+54MR2N3dR+0mg675gegU6IE98+W3F3kLO/iLq0b0q4Qsc5wTZD7AWSC55kSvC1JVrqoTDQlsTjiG6Q==}
@@ -2189,7 +2195,7 @@ packages:
         optional: true
     dependencies:
       '@auth/core': 0.32.0
-      next: /@hiogawa/react-server-next@0.0.9(@hiogawa/react-server@0.3.2)(react-dom@19.0.0-rc-df5f2736-20240712)(react@19.0.0-rc-df5f2736-20240712)(typescript@5.5.2)(vite@5.3.3)
+      next: /@hiogawa/react-server-next@0.0.9(patch_hash=oxl5zznrztknlxcswrp5prmf5m)(@hiogawa/react-server@0.3.2)(react-dom@19.0.0-rc-df5f2736-20240712)(react@19.0.0-rc-df5f2736-20240712)(typescript@5.5.2)(vite@5.3.3)
       react: 19.0.0-rc-df5f2736-20240712
     dev: false
 
