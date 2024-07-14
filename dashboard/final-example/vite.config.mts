@@ -25,6 +25,7 @@ export default defineConfig({
 		}),
 	],
 	optimizeDeps: {
-		exclude: ["@vercel/postgres", "bcrypt", "next-auth"],
+		// cannot (should not) pre-bundle node-gyp-build etc...
+		exclude: ["bcrypt"],
 	},
 });
