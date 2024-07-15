@@ -1,8 +1,6 @@
 import type { NextAuthConfig } from 'next-auth';
 
 export const authConfig = {
-  // TODO: this shouldn't be required
-  useSecureCookies: false,
   pages: {
     signIn: '/login',
   },
