@@ -9,8 +9,8 @@ dependencies:
     specifier: ^2.1.4
     version: 2.1.4(react@19.0.0-rc-df5f2736-20240712)
   '@hiogawa/react-server':
-    specifier: https://pkg.pr.new/hi-ogawa/vite-plugins/@hiogawa/react-server@545
-    version: '@pkg.pr.new/hi-ogawa/vite-plugins/@hiogawa/react-server@545(react-dom@19.0.0-rc-df5f2736-20240712)(react-server-dom-webpack@19.0.0-rc-df5f2736-20240712)(react@19.0.0-rc-df5f2736-20240712)(vite@5.3.3)'
+    specifier: https://pkg.pr.new/hi-ogawa/vite-plugins/@hiogawa/react-server@97b9f63
+    version: '@pkg.pr.new/hi-ogawa/vite-plugins/@hiogawa/react-server@97b9f63(react-dom@19.0.0-rc-df5f2736-20240712)(react-server-dom-webpack@19.0.0-rc-df5f2736-20240712)(react@19.0.0-rc-df5f2736-20240712)(vite@5.3.3)'
   '@tailwindcss/forms':
     specifier: ^0.5.7
     version: 0.5.7(tailwindcss@3.4.4)
@@ -27,11 +27,11 @@ dependencies:
     specifier: ^2.1.1
     version: 2.1.1
   next:
-    specifier: https://pkg.pr.new/hi-ogawa/vite-plugins/@hiogawa/react-server-next@545
-    version: '@pkg.pr.new/hi-ogawa/vite-plugins/@hiogawa/react-server-next@545(@hiogawa/react-server@0.3.2)(react-dom@19.0.0-rc-df5f2736-20240712)(react@19.0.0-rc-df5f2736-20240712)(typescript@5.5.2)(vite@5.3.3)'
+    specifier: https://pkg.pr.new/hi-ogawa/vite-plugins/@hiogawa/react-server-next@97b9f63
+    version: '@pkg.pr.new/hi-ogawa/vite-plugins/@hiogawa/react-server-next@97b9f63(@hiogawa/react-server@0.3.3)(react-dom@19.0.0-rc-df5f2736-20240712)(react@19.0.0-rc-df5f2736-20240712)(typescript@5.5.2)(vite@5.3.3)'
   next-auth:
     specifier: 5.0.0-beta.19
-    version: 5.0.0-beta.19(@hiogawa/react-server-next@0.0.9)(react@19.0.0-rc-df5f2736-20240712)
+    version: 5.0.0-beta.19(@hiogawa/react-server-next@0.0.10)(react@19.0.0-rc-df5f2736-20240712)
   postcss:
     specifier: 8.4.38
     version: 8.4.38
@@ -2110,7 +2110,7 @@ packages:
     resolution: {integrity: sha512-Yd3UES5mWCSqR+qNT93S3UoYUkqAZ9lLg8a7g9rimsWmYGK8cVToA4/sF3RrshdyV3sAGMXVUmpMYOw+dLpOuw==}
     dev: false
 
-  /next-auth@5.0.0-beta.19(@hiogawa/react-server-next@0.0.9)(react@19.0.0-rc-df5f2736-20240712):
+  /next-auth@5.0.0-beta.19(@hiogawa/react-server-next@0.0.10)(react@19.0.0-rc-df5f2736-20240712):
     resolution: {integrity: sha512-YHu1igcAxZPh8ZB7GIM93dqgY6gcAzq66FOhQFheAdOx1raxNcApt05nNyNCSB6NegSiyJ4XOPsaNow4pfDmsg==}
     peerDependencies:
       '@simplewebauthn/browser': ^9.0.1
@@ -2127,7 +2127,7 @@ packages:
         optional: true
     dependencies:
       '@auth/core': 0.32.0
-      next: '@pkg.pr.new/hi-ogawa/vite-plugins/@hiogawa/react-server-next@545(@hiogawa/react-server@0.3.2)(react-dom@19.0.0-rc-df5f2736-20240712)(react@19.0.0-rc-df5f2736-20240712)(typescript@5.5.2)(vite@5.3.3)'
+      next: '@pkg.pr.new/hi-ogawa/vite-plugins/@hiogawa/react-server-next@97b9f63(@hiogawa/react-server@0.3.3)(react-dom@19.0.0-rc-df5f2736-20240712)(react@19.0.0-rc-df5f2736-20240712)(typescript@5.5.2)(vite@5.3.3)'
       react: 19.0.0-rc-df5f2736-20240712
     dev: false
 
@@ -2930,17 +2930,6 @@ packages:
       fsevents: 2.3.3
     dev: false
 
-  /vitefu@0.2.5(vite@5.3.3):
-    resolution: {integrity: sha512-SgHtMLoqaeeGnd2evZ849ZbACbnwQCIwRH57t18FxcXoZop0uQu0uzlIhJBlF/eWVzuce0sHeqPcDo+evVcg8Q==}
-    peerDependencies:
-      vite: ^3.0.0 || ^4.0.0 || ^5.0.0
-    peerDependenciesMeta:
-      vite:
-        optional: true
-    dependencies:
-      vite: 5.3.3(@types/node@20.14.8)
-    dev: false
-
   /watchpack@2.4.1:
     resolution: {integrity: sha512-8wrBCMtVhqcXP2Sup1ctSkga6uc2Bx0IIvKyT7yTFier5AXHooSI+QyQQAtTb7+E0IUCCKyTFmXqdqgum2XWGg==}
     engines: {node: '>=10.13.0'}
@@ -3068,11 +3057,11 @@ packages:
     resolution: {integrity: sha512-XBx9AXhXktjUqnepgTiE5flcKIYWi/rme0Eaj+5Y0lftuGBq+jyRu/md4WnuxqgP1ubdpNCsYEYPxrzVHD8d6g==}
     dev: false
 
-  '@pkg.pr.new/hi-ogawa/vite-plugins/@hiogawa/react-server-next@545(@hiogawa/react-server@0.3.2)(react-dom@19.0.0-rc-df5f2736-20240712)(react@19.0.0-rc-df5f2736-20240712)(typescript@5.5.2)(vite@5.3.3)':
-    resolution: {tarball: https://pkg.pr.new/hi-ogawa/vite-plugins/@hiogawa/react-server-next@545}
-    id: '@pkg.pr.new/hi-ogawa/vite-plugins/@hiogawa/react-server-next@545'
+  '@pkg.pr.new/hi-ogawa/vite-plugins/@hiogawa/react-server-next@97b9f63(@hiogawa/react-server@0.3.3)(react-dom@19.0.0-rc-df5f2736-20240712)(react@19.0.0-rc-df5f2736-20240712)(typescript@5.5.2)(vite@5.3.3)':
+    resolution: {tarball: https://pkg.pr.new/hi-ogawa/vite-plugins/@hiogawa/react-server-next@97b9f63}
+    id: '@pkg.pr.new/hi-ogawa/vite-plugins/@hiogawa/react-server-next@97b9f63'
     name: '@hiogawa/react-server-next'
-    version: 0.0.9
+    version: 0.0.10
     hasBin: true
     peerDependencies:
       '@hiogawa/react-server': '*'
@@ -3080,8 +3069,8 @@ packages:
       react-dom: '*'
       vite: '*'
     dependencies:
-      '@hiogawa/react-server': '@pkg.pr.new/hi-ogawa/vite-plugins/@hiogawa/react-server@545(react-dom@19.0.0-rc-df5f2736-20240712)(react-server-dom-webpack@19.0.0-rc-df5f2736-20240712)(react@19.0.0-rc-df5f2736-20240712)(vite@5.3.3)'
-      '@hiogawa/vite-plugin-ssr-middleware': '@pkg.pr.new/hi-ogawa/vite-plugins/@hiogawa/vite-plugin-ssr-middleware@44d0769(vite@5.3.3)'
+      '@hiogawa/react-server': '@pkg.pr.new/hi-ogawa/vite-plugins/@hiogawa/react-server@97b9f63(react-dom@19.0.0-rc-df5f2736-20240712)(react-server-dom-webpack@19.0.0-rc-df5f2736-20240712)(react@19.0.0-rc-df5f2736-20240712)(vite@5.3.3)'
+      '@hiogawa/vite-plugin-ssr-middleware': '@pkg.pr.new/hi-ogawa/vite-plugins/@hiogawa/vite-plugin-ssr-middleware@97b9f63(vite@5.3.3)'
       '@vitejs/plugin-react': 4.3.1(vite@5.3.3)
       esbuild: 0.20.2
       react: 19.0.0-rc-df5f2736-20240712
@@ -3093,11 +3082,11 @@ packages:
       - typescript
     dev: false
 
-  '@pkg.pr.new/hi-ogawa/vite-plugins/@hiogawa/react-server@545(react-dom@19.0.0-rc-df5f2736-20240712)(react-server-dom-webpack@19.0.0-rc-df5f2736-20240712)(react@19.0.0-rc-df5f2736-20240712)(vite@5.3.3)':
-    resolution: {tarball: https://pkg.pr.new/hi-ogawa/vite-plugins/@hiogawa/react-server@545}
-    id: '@pkg.pr.new/hi-ogawa/vite-plugins/@hiogawa/react-server@545'
+  '@pkg.pr.new/hi-ogawa/vite-plugins/@hiogawa/react-server@97b9f63(react-dom@19.0.0-rc-df5f2736-20240712)(react-server-dom-webpack@19.0.0-rc-df5f2736-20240712)(react@19.0.0-rc-df5f2736-20240712)(vite@5.3.3)':
+    resolution: {tarball: https://pkg.pr.new/hi-ogawa/vite-plugins/@hiogawa/react-server@97b9f63}
+    id: '@pkg.pr.new/hi-ogawa/vite-plugins/@hiogawa/react-server@97b9f63'
     name: '@hiogawa/react-server'
-    version: 0.3.2
+    version: 0.3.3
     peerDependencies:
       react: '*'
       react-dom: '*'
@@ -3105,7 +3094,7 @@ packages:
       vite: '*'
     dependencies:
       '@edge-runtime/cookies': 4.1.1
-      '@hiogawa/transforms': '@pkg.pr.new/hi-ogawa/vite-plugins/@hiogawa/transforms@44d0769'
+      '@hiogawa/transforms': '@pkg.pr.new/hi-ogawa/vite-plugins/@hiogawa/transforms@97b9f63'
       '@tanstack/history': 1.44.2
       es-module-lexer: 1.5.4
       fast-glob: 3.3.2
@@ -3113,11 +3102,10 @@ packages:
       react-dom: 19.0.0-rc-df5f2736-20240712(react@19.0.0-rc-df5f2736-20240712)
       react-server-dom-webpack: 19.0.0-rc-df5f2736-20240712(react-dom@19.0.0-rc-df5f2736-20240712)(react@19.0.0-rc-df5f2736-20240712)(webpack@5.93.0)
       vite: 5.3.3(@types/node@20.14.8)
-      vitefu: 0.2.5(vite@5.3.3)
     dev: false
 
-  '@pkg.pr.new/hi-ogawa/vite-plugins/@hiogawa/transforms@44d0769':
-    resolution: {tarball: https://pkg.pr.new/hi-ogawa/vite-plugins/@hiogawa/transforms@44d0769}
+  '@pkg.pr.new/hi-ogawa/vite-plugins/@hiogawa/transforms@97b9f63':
+    resolution: {tarball: https://pkg.pr.new/hi-ogawa/vite-plugins/@hiogawa/transforms@97b9f63}
     name: '@hiogawa/transforms'
     version: 0.0.0
     dependencies:
@@ -3126,9 +3114,9 @@ packages:
       periscopic: 4.0.2
     dev: false
 
-  '@pkg.pr.new/hi-ogawa/vite-plugins/@hiogawa/vite-plugin-ssr-middleware@44d0769(vite@5.3.3)':
-    resolution: {tarball: https://pkg.pr.new/hi-ogawa/vite-plugins/@hiogawa/vite-plugin-ssr-middleware@44d0769}
-    id: '@pkg.pr.new/hi-ogawa/vite-plugins/@hiogawa/vite-plugin-ssr-middleware@44d0769'
+  '@pkg.pr.new/hi-ogawa/vite-plugins/@hiogawa/vite-plugin-ssr-middleware@97b9f63(vite@5.3.3)':
+    resolution: {tarball: https://pkg.pr.new/hi-ogawa/vite-plugins/@hiogawa/vite-plugin-ssr-middleware@97b9f63}
+    id: '@pkg.pr.new/hi-ogawa/vite-plugins/@hiogawa/vite-plugin-ssr-middleware@97b9f63'
     name: '@hiogawa/vite-plugin-ssr-middleware'
     version: 0.0.3
     peerDependencies:
