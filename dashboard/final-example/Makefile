@@ -1,13 +1,17 @@
 # phony all
 .PHONY: $(shell grep --no-filename -E '^([a-zA-Z_-]|/)+:' $(MAKEFILE_LIST) | sed 's/:.*//')
 
-up:
+# Setup
+#   make docker/up
+#   make db/reset
+
+docker/up:
 	docker compose up -d
 
-down:
+docker/down:
 	docker compose down
 
-clean:
+docker/clean:
 	docker compose down -v --remove-orphans
 
 db/reset:
