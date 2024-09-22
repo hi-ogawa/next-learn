@@ -1,7 +1,5 @@
 import next from "next/vite";
-import { defineConfig, loadEnv } from "vite";
-
-Object.assign(process.env, loadEnv("development", import.meta.dirname, ""));
+import { defineConfig } from "vite";
 
 export default defineConfig({
 	plugins: [
@@ -10,15 +8,15 @@ export default defineConfig({
 				{
 					name: "config",
 					config: () => ({
-						ssr: {
-							external: [
-								"@vercel/postgres",
-								"bcrypt",
-								// need to inline next-auth, but we can externalize @auth/core,
-								// which incldues cjs deps such as `cookie`
-								"@auth/core",
-							],
-						},
+						resolve: {
+							alias: {
+								// workaround next-auth's unusual import until
+								// https://github.com/nextauthjs/next-auth/pull/11551
+								'next/server.js': 'next/server',
+								'next/headers.js': 'next/headers',
+								'next/navigation.js': 'next/navigation',
+							}
+						}
 					}),
 				},
 			],
